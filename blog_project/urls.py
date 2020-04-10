@@ -22,7 +22,7 @@ from rest_framework_swagger.views import get_swagger_view
 API_TITLE = 'Blog API'
 API_DESCRIPTION = 'A Web API for creating and editing blog posts.'
 
-# schema_view = get_schema_view(title='Blog API')
+schema_view = get_swagger_view(title='Blog API')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,6 +33,6 @@ urlpatterns = [
          include('rest_auth.registration.urls')),
     path('docs/',
          include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
-    path('schema/', get_schema_view(title=API_TITLE)),
-    path('swagger-docs/', get_swagger_view(title=API_TITLE)),
+    # path('schema/', get_schema_view(title=API_TITLE)),
+    path('swagger-docs/', schema_view),
 ]
