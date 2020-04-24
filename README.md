@@ -1,6 +1,6 @@
 # Blog API
 
-A blog-post django rest api project
+A Web API for creating and editing blog posts
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ To get a development env running:
 > clone this repo to your local machine
 
 ```
-git clone https://github.com/JohnJohnsonOkah/library.git
+git clone https://github.com/JohnJohnsonOkah/blog-api.git
 ```
 
 > install requirements
